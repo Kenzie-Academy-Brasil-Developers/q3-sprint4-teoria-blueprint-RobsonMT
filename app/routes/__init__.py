@@ -1,7 +1,10 @@
-from app.routes.hello_route import hello_route
-from app.routes.world_route import world_route
+from flask import Flask
+from app.routes.hello_blueprint import bp as bp_hello
+from app.routes.world_blueprint import bp as bp_world
 
 
-def init_app(app):
-    hello_route(app)
-    world_route(app)
+
+
+def init_app(app: Flask):
+    app.register_blueprint(bp_hello)
+    app.register_blueprint(bp_world)

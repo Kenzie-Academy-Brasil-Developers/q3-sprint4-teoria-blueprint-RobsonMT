@@ -16,6 +16,6 @@ pylint==2.12.2
 python-dotenv==0.19.2
 toml==0.10.2
 tomli==1.2.3
-typing-extensions==4.0.1
+typing_extensions==4.0.1
 Werkzeug==2.0.2
 wrapt==1.13.3
